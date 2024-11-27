@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Click me!</p>
+    <script>
+        $(document).ready(function () {
+            $('p').click(function () {
+                $(this).after('<p>This is a click Event</p>');
+            }).dblclick(function () {
+                $(this).after('<p>This is a double-click Event</p>');
+            });
+        });
+    </script>
+</body>
+</html>
